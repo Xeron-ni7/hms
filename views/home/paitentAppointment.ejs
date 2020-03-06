@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paitent - <%=name%></title>
+    <link rel="icon" type="image/png" href="/ext/img/icon/hospital_flat_round_icon_with_long_shadow_vector_7538947_rOf_2.ico"/>
+    <link href="/ext/css/animation.css" rel="stylesheet"/>
+    <link href="/ext/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/ext/js/jquery.min.js"></script>
+    <script src="/ext/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <!--Font awesome-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+   <img src="/ext/img/hpt.jpg" alt="Logo" style="width:60px;" class="img-responsive">
+ </a>
+ <ul class="navbar-nav mr-auto">
+   <li class="nav-item">
+     <a class="nav-link " href="/home" >Dashboard</a>
+   </li>
+   <li class="nav-item ">
+    <a class="nav-link" href="/home/patient/doctors">Doctors</a>
+  </li>
+    <li class="nav-item ">
+    <a class="nav-link active" href="/home/patient/appointment">Appointments</a>
+  </li>
+   <li class="nav-item">
+     <a class="nav-link" href="/home/bill">Bill Reports</a>
+   </li>
+   
+ 
+ </ul>
+ <ul class="navbar-nav">
+   <li class="nav-item active">
+    <a class="nav-link active" href="/home/profile" data-toggle="tooltip" data-placement="top" title="Profile" > <i class="fa fa-user" aria-hidden="true"></i></a>
+   </li>
+     <li class="nav-item active">
+     <a class="nav-link" href="/logout" data-toggle="tooltip" data-placement="top" title="Log Out">
+         <i class="fa fa-sign-out" aria-hidden="true"></i>
+     </a>
+   </li>
+ </ul>
+</nav>
+<div class="container">
+<!--Container begin-->
+
+
+<div class="jumbotron" style="margin-top: 5%;">
+    <h1>Appointments</h1>
+    <p>Active: </p>
+    <p>Pending: </p>
+    <p>Total: </p>
+  </div>
+
+<div class="card">
+<div class="card-header">
+    <p>Upcoming Appointments</p>
+</div>
+<div class="card-body">
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Appintment With</td>
+            <td>Time</td>
+        </tr>
+    </thead>
+</table>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-header">
+  <p>Appointments Pending</p>
+</div>
+<div class="card-body">
+<table class="table table-dark table-striped">
+  <thead>
+      <tr>
+          <td>ID</td>
+          <td>Appintment With</td>
+          <td>Time</td>
+      </tr>
+  </thead>
+</table>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+  <p>Appointments History</p>
+</div>
+<div class="card-body">
+<table class="table table-dark table-striped">
+  <thead>
+      <tr>
+          <td>ID</td>
+          <td>Appintment With</td>
+          <td>Time</td>
+      </tr>
+  </thead>
+</table>
+</div>
+</div>
+
+<!--Container end-->
+</div>
+</body>
+</html>

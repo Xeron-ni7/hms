@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login Page</title>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/ext/img/icon/hospital_flat_round_icon_with_long_shadow_vector_7538947_rOf_2.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/ext/login/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/ext/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/ext/login/css/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
-	<h1>Login Page</h1>
-	<form method="post"> 
-		Username: <input type="text" name="uname" > <br>
-		Password: <input type="password" name="password" ><br>
-		<input type="submit" name="submit" value="Submit" >
-	</form>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				
+
+
+				<form class="login100-form validate-form flex-sb flex-w" method="POST" action="/login">
+					<span class="login100-form-title p-b-51">
+						Login
+					</span>
+
+					<%if( typeof success_msg != 'undefined' && success_msg!=''){%>
+						<h6 class="animated flipInX slower delay-2s" style="text-align: center;padding: 10px;border-radius: 0px 30px; background-color: #20bf6b;color: black;">
+							<%= success_msg %>
+						</h6>
+						<br/>
+				
+						  <%}%>
+
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Email is required">
+						<input class="input100" type="email" name="email" placeholder="Email - Address">
+						<span class="focus-input100"></span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<!-- <div class="flex-sb-m w-full p-t-3 p-b-24">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot?
+							</a>
+						</div>
+					</div> -->
+
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17" >
+						<button class="login100-form-btn" style="background-color: #218c74;" onclick="location.href='/signup'">
+							Sign Up
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="/ext/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/ext/login/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/ext/login/js/main.js"></script>
+
 </body>
 </html>
